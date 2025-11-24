@@ -1,4 +1,34 @@
-# Source Code Structure
+# Portafolio de Estructuras de Datos y Algoritmos 2 - ULACIT
+
+Portafolio web desarrollado para el curso de **Estructuras de Datos** de la Universidad Latinoamericana de Ciencia y Tecnología (ULACIT). Este proyecto documenta el aprendizaje y aplicación de conceptos fundamentales de estructuras de datos mediante ejemplos prácticos, explicaciones detalladas y reflexiones personales.
+
+## 📚 Contenido del Repositorio
+
+Este portafolio contiene **10 semanas** de contenido educativo sobre estructuras de datos y programación, incluyendo:
+
+### Semanas de Contenido
+
+1. **Semana 1 - Recursividad**: Técnica fundamental donde una función se llama a sí misma para resolver problemas complejos
+2. **Semana 2 - Valores, Operadores y Expresiones**: Aborda distintos tipos de operadores y expresiones en programación
+3. **Semana 3 - Estructuras de Control**: Componentes que permiten controlar el flujo de ejecución de un programa
+4. **Semana 4 - Estructuras de Datos**: Organización y clasificaciones de estructuras de datos
+5. **Semana 5 - Colas**: Estructura de datos tipo FIFO (First In, First Out)
+6. **Semana 6 - Colas y Listas Enlazadas**: Exploración de la interconexión entre colas y listas enlazadas
+7. **Semana 7 - Lista Simple**: Estudio de la forma más fundamental de estructura enlazada
+8. **Semana 8 - Listas Simples y Aplicabilidad de Colas**: Consolidación de conceptos y aplicaciones prácticas
+9. **Semana 9 - Lista Circular**: Variación de lista enlazada con circularidad
+10. **Semana 10 - Lista Circular Doble**: Estructura avanzada con navegación bidireccional y circularidad
+
+### Características del Contenido
+
+Cada semana incluye:
+- **Resumen**: Visión general del tema abordado
+- **Desarrollo del Tema**: Explicaciones detalladas con secciones estructuradas
+- **Ejemplos Prácticos**: Código en Java con syntax highlighting implementado
+- **Diagramas**: Representaciones visuales de conceptos
+- **Reflexión Personal**: Análisis y aprendizaje del estudiante
+
+## 🏗️ Estructura del Código
 
 Esta es la estructura del código fuente del portafolio, organizada siguiendo las mejores prácticas de Clean Code.
 
