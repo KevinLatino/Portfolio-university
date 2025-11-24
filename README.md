@@ -44,9 +44,6 @@ Este portafolio está construido con tecnologías modernas y estándares de la i
 - **React Syntax Highlighter** - Resaltado de sintaxis para ejemplos de código
 - **Three.js** - Librería 3D para el efecto de fondo líquido interactivo
 
-### Desarrollo
-- **ESLint** - Linter para mantener la calidad del código
-- **PostCSS** - Procesador de CSS para optimización
 
 ## 🚀 Hosting y Despliegue
 
