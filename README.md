@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Source Code Structure
 
-## Getting Started
+Esta es la estructura del código fuente del portafolio, organizada siguiendo las mejores prácticas de Clean Code.
 
-First, run the development server:
+## Estructura de Directorios
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── layout.tsx         # Layout principal
+│   ├── page.tsx           # Página de inicio (Hero)
+│   ├── temas/             # Página de temas
+│   └── semana/[id]/       # Páginas dinámicas de semanas
+│
+├── components/            # Componentes React
+│   ├── CardComponent.tsx  # Componente de tarjeta
+│   ├── hero/              # Componentes del hero
+│   ├── ui/                # Componentes UI reutilizables
+│   │   ├── CodeBlock.tsx
+│   │   └── ScrollToTopButton.tsx
+│   └── week/              # Componentes específicos de semanas
+│       ├── WeekSection.tsx
+│       ├── SummarySection.tsx
+│       ├── DevelopmentSection.tsx
+│       ├── ExamplesSection.tsx
+│       ├── DiagramsSection.tsx
+│       ├── ReflectionSection.tsx
+│       ├── WeekHeader.tsx
+│       └── DefaultWeekView.tsx
+│
+├── constants/             # Constantes de la aplicación
+│   └── colors.ts          # Colores y paletas
+│
+├── data/                  # Datos estáticos
+│   ├── weeks.ts           # Metadatos de semanas
+│   └── weekContent.ts     # Contenido de semanas
+│
+├── lib/                   # Utilidades y funciones helper
+│   ├── color-utils.ts     # Utilidades de colores
+│   ├── text-formatter.tsx # Formateador de texto markdown
+│   └── index.ts           # Exports centralizados
+│
+├── types/                 # Tipos TypeScript
+│   └── card.ts            # Tipos de componentes de tarjetas
+│
+├── layout/                # Layouts personalizados
+│   └── liquid-background.tsx
+│
+└── ui/                    # Componentes UI de terceros/configurados
+    └── LiquidEther.tsx    # Componente de fondo líquido
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Principios de Clean Code Aplicados
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Separación de Responsabilidades
+- Cada componente tiene una única responsabilidad
+- Utilidades separadas de componentes
+- Constantes centralizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 2. Modularidad
+- Componentes pequeños y reutilizables
+- Exports centralizados mediante `index.ts`
+- Funciones puras en utilidades
 
-## Learn More
+### 3. Tipado Fuerte
+- TypeScript en todos los archivos
+- Interfaces bien definidas
+- Tipos exportados desde archivos dedicados
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Organización por Feature
+- Componentes agrupados por dominio (week/, hero/, ui/)
+- Datos separados de lógica de presentación
+- Configuración centralizada
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 5. Reutilización
+- Componentes base (WeekSection, ColoredSubsection)
+- Utilidades genéricas (color-utils, text-formatter)
+- Constantes compartidas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Convenciones de Nomenclatura
 
-## Deploy on Vercel
+- **Componentes**: PascalCase (ej: `CardComponent.tsx`)
+- **Utilidades**: kebab-case (ej: `color-utils.ts`)
+- **Constantes**: UPPER_SNAKE_CASE en archivos, camelCase para exports
+- **Tipos/Interfaces**: PascalCase con sufijo descriptivo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Imports
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Usamos imports absolutos con el alias `@/` configurado en `tsconfig.json`:
+
+```typescript
+import { formatText } from '@/lib/text-formatter';
+import { CodeBlock } from '@/components/ui';
+import { SECTION_COLORS } from '@/constants/colors';
+```
+
