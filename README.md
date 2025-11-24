@@ -28,6 +28,40 @@ Cada semana incluye:
 - **Diagramas**: Representaciones visuales de conceptos
 - **Reflexión Personal**: Análisis y aprendizaje del estudiante
 
+## 🛠️ Tecnologías Utilizadas
+
+Este portafolio está construido con tecnologías modernas y estándares de la industria:
+
+### Frontend
+- **Next.js 16** - Framework React con App Router para renderizado del lado del servidor y generación estática
+- **React 19** - Biblioteca de JavaScript para construir interfaces de usuario
+- **TypeScript** - Superset de JavaScript con tipado estático para mayor robustez del código
+- **Tailwind CSS 4** - Framework de CSS utility-first para diseño responsivo y moderno
+
+### Librerías y Herramientas
+- **Framer Motion** - Biblioteca de animaciones para React, utilizada en las tarjetas de temas
+- **Lucide React** - Iconos SVG modernos y personalizables
+- **React Syntax Highlighter** - Resaltado de sintaxis para ejemplos de código
+- **Three.js** - Librería 3D para el efecto de fondo líquido interactivo
+
+### Desarrollo
+- **ESLint** - Linter para mantener la calidad del código
+- **PostCSS** - Procesador de CSS para optimización
+
+## 🚀 Hosting y Despliegue
+
+El portafolio está desplegado en **Vercel**, una plataforma de hosting optimizada para aplicaciones Next.js y React.
+
+### Características del Hosting
+- **Despliegue Automático**: Integración continua con Git para despliegues automáticos
+- **CDN Global**: Distribución de contenido a través de una red global para tiempos de carga óptimos
+- **SSL Automático**: Certificados HTTPS incluidos automáticamente
+- **Optimización Automática**: Next.js optimiza automáticamente las imágenes, fuentes y código
+- **Serverless Functions**: API routes ejecutadas como funciones serverless
+
+### URL del Proyecto
+El portafolio está disponible en: [URL del proyecto en Vercel]
+
 ## 🏗️ Estructura del Código
 
 Esta es la estructura del código fuente del portafolio, organizada siguiendo las mejores prácticas de Clean Code.

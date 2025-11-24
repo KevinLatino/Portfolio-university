@@ -14,7 +14,7 @@ const DEFAULT_LIQUID_CONFIG: Partial<LiquidEtherProps> = {
   mouseForce: 30,
   cursorSize: 65,
   resolution: 0.5,
-  colors: ['#1FD2FF', '#1A53FF', '#1FC7FF'],
+  colors: ['rgba(112, 123, 156, 0.6)', 'rgba(112, 123, 156, 0.4)', 'rgba(112, 123, 156, 0.2)'],
   autoDemo: true,
   autoSpeed: 0.5,
   autoIntensity: 2.2,
