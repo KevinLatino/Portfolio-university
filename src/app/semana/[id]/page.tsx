@@ -42,8 +42,6 @@ export default async function SemanaPage({ params }: PageProps) {
 
             <ExamplesSection examples={weekContent.content.examples} />
 
-            <DiagramsSection diagrams={weekContent.content.diagrams} />
-
             <ReflectionSection reflection={weekContent.content.reflection} />
           </article>
         ) : (
